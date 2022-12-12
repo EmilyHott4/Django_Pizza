@@ -12,14 +12,10 @@ pizzas = Pizza.objects.all()
 for p in pizzas:
     print(p.id, '  ', p)
 
-
-
 p = Pizza.objects.get(id=1)
 
 print(p.id)
 print(p.pizza_name)
-
-
 
 toppings = p.topping_set.all()
 for t in toppings:
